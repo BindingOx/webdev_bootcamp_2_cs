@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h2>Forms Demo</h2>
+
+    <form action="/tacos">
+      <p>
+        <label for="username">Enter a username:</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="passw">Enter a password:</label>
+        <input id="passw" type="password" placeholder="password" />
+      </p>
+      <p>
+        <label for="color">Select a color:</label>
+        <input id="color" type="color" />
+      </p>
+      <p>
+        <label for="numb">Select a number:</label>
+        <input id="numb" type="number" placeholder="enter a number" min="1" max="10"/>
+      </p>
+      <!-- range tag; value is the starting value; step is how much it changes -->
+      <!-- bug went away - when min is >=1, the slider doesnt go all the way to the top with steps set -->
+      <p>
+        <label for="slider">How pumped are you?</label>
+        <input type="range" name="slider" id="slider" min="0" max="100" step="10" value="30">
+      </p>
+      <p>
+        <label for="requests">Any special requests?</label>
+        <br>
+        <textarea name="" id="requests" cols="30" rows="10"></textarea>
+      </p>
+      <button>Submit</button>
+    </form>
+
+
+
+  <!-- Outside of form so no default behavior -->
+  <h2>Search query practice</h2>
+  <form action="https://reddit.com/search">
+    <input type="text" name="q" />
+    <button>Search Reddit</button>
+  </form>
+  <form action="https://www.google.com/search">
+    <input type="text" name="q" />
+    <button>Search Google</button>
+  </form>
+  <form action="https://www.youtube.com/results">
+    <input type="text" name="search_query" />
+    <button>Search Youtube</button>
+  </form>
+
+  <h2>More inputs</h2>
+  <form action="/birds">
+    <!-- example of a checkbox -->
+    <label for="agree">I agree to everything</label>
+    <input type="checkbox" name="agree_tos" id="agree" />
+    
+    <!-- example of radioboxes -->
+    <p>
+      <h4>Shirt size</h4>
+      <label for="s">small</label>
+      <input type="radio" name="size" id="s" value="small" />
+      <label for="m">medium</label>
+      <input type="radio" name="size" id="m" value="medium" />
+      <label for="l">large</label>
+      <input type="radio" name="size" id="l" value="large" />
+    </p>
+    <!-- example of a dropdown -->
+    <p>
+      <h4>Meals</h4>
+      <label for="meal">Please select a meal:</label>
+      <select name="meal" id="meal">
+        <option value="">choose one</option>
+        <option value="meal1">Burger and Fries</option>
+        <option value="meal1">Chicken and Rice</option>
+        <option value="meal2">Spaghetti</option>
+        <option value="meal3">Lasagna</option>
+        <option value="meal4">Ham and Cheese Sandwich</option>
+        <option value="meal5">Salad</option>
+      </select>
+    </p>
+    <button>Submit</button>
+  </form> 
+   <h2>Validations Demo</h2>
+   <form action="/dummy">
+    <label for="first">Enter First Name</label>
+    <input type="text" name="first" id="first" required>
+    <button>Submit</button>
+   </form>
+</body>
+</html>
