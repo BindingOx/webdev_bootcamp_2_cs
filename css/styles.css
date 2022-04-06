@@ -1,3 +1,14 @@
 h2 {
-  color: orange;
+  color: palevioletred;
+  background-color: yellow;
+}
+
+button {
+  color: red;
+  background-color: bisque;
+}
+
+p {
+  color: blueviolet;
+  background-color: turquoise;
 }
