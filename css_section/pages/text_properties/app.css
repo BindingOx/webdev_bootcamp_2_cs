@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+  font-weight: normal;
+  text-decoration: underline red wavy;
+  letter-spacing: 5px;
+}
+
+p {
+  font-weight: 500;
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+}
