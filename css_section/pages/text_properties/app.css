@@ -3,8 +3,11 @@ h1 {
   font-weight: normal;
   text-decoration: underline red wavy;
   letter-spacing: 5px;
+<<<<<<< HEAD
   font-size: 40px;
   font-family: Tahoma;
+=======
+>>>>>>> a75de6fc1e1479c1a022acb5434c584a12e47f14
 }
 
 p {
