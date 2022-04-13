@@ -48,6 +48,7 @@ span {
   color: #a8dadc;
 }
 
-.footer a {
-  background-color: black;
+/* I didnt need to make a footer class since there's only one */
+footer a {
+  color: #e63946;
 }
