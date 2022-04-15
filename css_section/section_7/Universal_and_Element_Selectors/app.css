@@ -32,7 +32,7 @@ span {
   font-size: 16px;
 }
 
-/* scenario */
+/* scenario: coloring anchor tags*/
 
 /* a {
   color: #a8dadc;
@@ -51,4 +51,17 @@ span {
 /* I didnt need to make a footer class since there's only one */
 footer a {
   color: #e63946;
+}
+
+/* end of scenario: coloring anchor tags*/
+
+/* descendent selector example */
+h2 + button {
+  color: #f1faee;
+  background-color: #e63946;
+}
+
+/* direct child selector example */
+footer > a {
+  color: #1d3557;
 }
