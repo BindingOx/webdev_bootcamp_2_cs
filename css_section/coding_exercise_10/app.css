@@ -3,6 +3,8 @@ header a {
   color: teal;
 }
 
+/* `p #dislikes a` wouldn't work because p isnt the parent but the element itself with the id. */
+
 #dislikes a {
   font-weight: bold;
   color: red;
