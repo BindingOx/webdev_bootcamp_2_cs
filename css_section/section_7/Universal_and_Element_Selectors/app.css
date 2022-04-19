@@ -105,3 +105,13 @@ a[href*="pup"] {
 .post:nth-of-type(2n) {
   background-color: #dfe8dd;
 }
+
+/* pseudo element examples */
+h2::first-letter {
+  font-size: 30px;
+  color: #e63946;
+}
+
+::selection {
+  background-color: #a8dadc;
+}
