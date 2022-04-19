@@ -65,3 +65,22 @@ h2 + button {
 footer > a {
   color: #1d3557;
 }
+
+/* attribute selector example */
+input[type="password"] {
+  color: #e63946;
+}
+input[type="text"] {
+  color: #1d3557;
+  font-weight: bold;
+}
+section[class="post"] {
+  border: 0.5rem outset #a8dadc;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* attribute selector with fuzzy matching */
+a[href*="pup"] {
+  color: purple;
+}
