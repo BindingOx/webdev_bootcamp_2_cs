@@ -88,11 +88,6 @@ a[href*="pup"] {
 }
 
 /* pseudo selector examples */
-.post button:hover {
-  background-color: #1d3557;
-  color: #f1faee;
-}
-
 .post a:hover {
   text-decoration: underline;
   font-weight: bold;
@@ -114,4 +109,16 @@ h2::first-letter {
 
 ::selection {
   background-color: #a8dadc;
+}
+
+/* specificity example */
+
+/* this one is more specific (class > element) */
+.post button:hover {
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+button:hover {
+  background-color: olive;
 }
