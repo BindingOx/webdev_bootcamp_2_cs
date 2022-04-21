@@ -1,0 +1,40 @@
+div {
+  width: 400px;
+  height: 100px;
+  color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  background-color: pink;
+  width: 150px;
+}
+#one {
+  background-color: #e5989b;
+  border-left-color: purple;
+  border-left-width: 10px;
+  /* border-width: 5px; */
+  border-style: solid;
+}
+#two {
+  background-color: #b5838d;
+  border-left-color: purple;
+  border-width: 5px;
+  border-style: solid;
+}
+#three {
+  background-color: #6d6875;
+  border: medium dashed green;
+  border-left-color: purple;
+}
+
+body #one:hover,
+#two:hover,
+#three:hover {
+  border-color: red;
+  /* box-sizing: border-box; */
+}
+
+input{
+  border-radius: 10px;
+}
