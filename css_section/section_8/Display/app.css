@@ -4,11 +4,13 @@ body * {
 
 span {
 	/* These do nothing */
-	width: 500px;
-	height: 500px;
+	width: 100px;
+	height: 100px;
 	/* These work horizontally but isn't really respected by the content on the page */
 	padding: 30px;
 	margin: 30px;
+    /* Width, Height, Margin, & Padding are now respected */
+    display: inline-block;
 }
 
 h1 {
@@ -17,4 +19,13 @@ h1 {
 	height: 50px;
 	padding: 20px;
 	margin: 20px;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    /* if set these to inline, they will collapse b/c width and height aren't respected */
+    /* display: inline; */
+    /* if set to inline-block, they will behalf like inlines and share a row */
+    display: inline-block;
 }
