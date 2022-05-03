@@ -3,10 +3,18 @@ body * {
 }
 
 span {
-	/* tThese do nothing */
+	/* These do nothing */
 	width: 500px;
 	height: 500px;
 	/* These work horizontally but isn't really respected by the content on the page */
 	padding: 30px;
 	margin: 30px;
+}
+
+h1 {
+	/* These work and a re respected*/
+	width: 300px;
+	height: 50px;
+	padding: 20px;
+	margin: 20px;
 }
