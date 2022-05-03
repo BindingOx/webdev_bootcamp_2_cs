@@ -1,3 +1,12 @@
 body * {
 	border: solid 2px black;
 }
+
+span {
+	/* tThese do nothing */
+	width: 500px;
+	height: 500px;
+	/* These work horizontally but isn't really respected by the content on the page */
+	padding: 30px;
+	margin: 30px;
+}
